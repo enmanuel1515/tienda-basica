@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito con Descuento</title>
+  <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+  <h1>Productos</h1>
+  <div class="encabezado">
+     <h1>CENTRO EDUCATIVO NIÑOS CREATIVOS</h1>
+     <h3>"DISCIPLINANDO LÍDERES"</h3>
+     <div class="logo-espacio">
+       <!-- Aquí tú reemplazas el src con la imagen del centro -->
+       <img src="Imagenes/Imagen1.png" alt="Logo del centro">
+     </div>
+   </div>
+   
+  <div class="grid-productos">
+    <!-- Repite esto 10 veces -->
+    <div class="producto">
+      <img src="Imagenes/dragones de berk.jpg" alt="Producto 1">
+      <h4>Producto 1</h4>
+      <p>$1000</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 1', 1000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/kilua.png" alt="Producto 2">
+      <h4>Producto 2</h4>
+      <p>$2000</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 2', 2000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/mujercabelloblanco.png" alt="Producto 3">
+      <h4>Producto 3</h4>
+      <p>$700</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 3', 700)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/Mujercuernitos.png" alt="Producto 4">
+      <h4>Producto 4</h4>
+      <p>$1500</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 4', 1500)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/samurai.png" alt="Producto 5">
+      <h4>Producto 5</h4>
+      <p>$2500</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 5', 2500)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/wazon.png" alt="Producto 6">
+      <h4>Producto 6</h4>
+      <p>$1800</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 6', 1800)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/dragones de berk.jpg" alt="Producto 7">
+      <h4>Producto 7</h4>
+      <p>$2200</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 7', 2200)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/dragones de berk.jpg" alt="Producto 8">
+      <h4>Producto 8</h4>
+      <p>$4000</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 8', 4000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/Mujercuernitos.png" alt="Producto 9">
+      <h4>Producto 9</h4>
+      <p>$6000</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 9', 6000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <img src="Imagenes/wazon.png" alt="Producto 10">
+      <h4>Producto 10</h4>
+      <p>$50000</p>
+      <button class="boton" onclick="agregarAlCarrito('Producto 10', 50000)">Agregar</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h2>Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total:</strong> <span id="total">0</span> pesos</p>
+    <button class="boton" onclick="comprar()">Comprar</button>
+    <p id="resultado" style="margin-top: 15px;"></p>
+  </div>
+
+  <script src="carrito.js"></script>
+</body>
+</html>
