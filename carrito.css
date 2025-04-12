@@ -64,4 +64,14 @@ body {
      border-radius: 8px;
      margin-top: 10px;
    }
+   button {
+     transition: transform 0.1s ease, background-color 0.2s;
+     cursor: pointer;
+   }
+   
+   button:active {
+     transform: scale(0.95);
+     background-color: #2196F3; /* opcional, cambia el color al hacer clic */
+     color: white;
+   }
    
